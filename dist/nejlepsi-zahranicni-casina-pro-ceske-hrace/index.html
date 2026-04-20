@@ -548,7 +548,7 @@ padding: 0!important;
            transform:scale(1.05);
         }
         
- @media (max-width: 769px) {
+ @media (max-width: 1024px) {
      .t-d1cd26{
                position: fixed;
     bottom:75px;
@@ -1631,15 +1631,16 @@ max-width: 70px;
                 padding-top: 80px;
             }
         }
-        
+        @media screen and (max-width:1200px){
+             table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
         @media (max-width: 768px) {
           
             
-            table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
+           
             
             .x-090218 thead th {
                 font-size: 14px;
@@ -1954,10 +1955,250 @@ max-width: 70px;
             .a-810402 {
                 flex-direction: column;
             }
-            .v-ab0f5c, 
+            .v-ab0f5c,
             .r-70de36 {
                 width: 100%;
             }
+        }
+
+        @keyframes p-89b497shimmer {
+            0%   { transform: translateX(-130%) skewX(-20deg); }
+            100% { transform: translateX(230%)  skewX(-20deg); }
+        }
+        .p-89b497 {
+            position: relative;
+            overflow: hidden;
+        }
+        .p-89b497::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 45%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.28), transparent);
+            animation: p-89b497shimmer 2.8s ease-in-out infinite;
+            animation-delay: var(--shimmer-delay, 0s);
+            pointer-events: none;
+        }
+
+    
+        .w-5e1752 {
+            display: grid;
+            grid-template-columns: 170px 1fr auto;
+            align-items: center;
+            background: #eaf1ec;
+            color: #000000;
+            border-radius: 30px;
+            margin-bottom: 14px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+            min-height: 100px;
+        }
+        .f-b557fa {
+            position: absolute;
+            top: 0;
+            left: 5px;
+            z-index: 2;
+            line-height: 1;
+        }
+        .f-b557fa img {
+            width: 32px;
+            height: 38px;
+            display: block;
+        }
+        .f-b557fa span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0f3d34;
+            color: #ffffff;
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        .h-40b374 {
+            background: #0e1028;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+            height: 100%;
+            min-height: 100px;
+        }
+        .h-40b374 img {
+            max-height: 105px;
+            max-width: 140px;
+            object-fit: contain;
+        }
+        .w-309103 {
+            padding: 14px 22px;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+        .z-c70a5b {
+            font-size: 17px;
+            font-weight: 700;
+            color: #000000;
+        }
+        .r-4e0d5a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: #000000;
+        }
+        .a-85ab75 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000000;
+            border: 1px solid #34564c;
+            border-radius: 6px;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            justify-content: center;
+            background: rgba(0,0,0,0.04);
+            height: fit-content;
+            border-radius: 30px;
+        }
+        .t-635616 {
+            list-style: none;
+            padding: 6px 10px;
+            margin: 4px 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2px 14px;
+            position: relative;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .t-635616 li::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: #0f3d34;
+            opacity: 0.12;
+            z-index: 0;
+            border-radius: 6px;
+        }
+        .t-635616 li {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 3px 5px;
+            color: #000000;
+            position: relative;
+            z-index: 1;
+            border-radius: 30px;
+        }
+        .t-635616 li::before {
+            content: "✅";
+            color: ;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        .t-17aaf8 {
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .t-17aaf8 a {
+            display: block;
+            padding: 14px 30px;
+            background: #0f3d34;
+            color: #ffffff !important;
+            font-weight: 700;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            transition: 0.3s;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+        }
+        .t-17aaf8 a::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 45%; height: 100%;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.28), transparent);
+            animation: p-89b497shimmer 2.8s ease-in-out infinite;
+            animation-delay: var(--shimmer-delay, 0s);
+            pointer-events: none;
+        }
+        .t-17aaf8 a:hover { transform: scale(1.03); }
+        @media (max-width: 1024px) {
+            .w-309103 {
+                grid-template-columns: 1fr;
+            }
+            .f-b557fa {
+                left: 20px;
+            }
+            .w-5e1752 {
+                grid-template-columns: 1fr;
+            }
+            .h-40b374 {
+                min-height: 80px;
+                padding: 16px;
+            }
+            .t-17aaf8 {
+                padding-bottom: 16px;
+            }
+            .t-17aaf8 a {
+                width: 100%;
+            }
+        }
+
+        .y-5b1a5c {
+            grid-column: 1 / -1;
+            border-top: 1px solid #34564c;
+            display: flex;
+            align-items: center;
+            padding: 6px 16px;
+            gap: 12px;
+            font-size: 10.5px;
+            color: #000000;
+        }
+        .y-5b1a5c .v4-disclaimer { flex: 1; }
+        .z-e3abf3 {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+        }
+        .q-d4ff37 {
+            position: relative;
+            display: inline-flex;
+            flex-shrink: 0;
+        }
+        .q-d4ff37 img {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .z-34a881 {
+            position: absolute;
+            bottom: -2px;
+            right: -3px;
+            background: #1d9bf0;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid rgba(255,255,255,0.9);
         }
     </style>
     
@@ -2021,7 +2262,7 @@ max-width: 70px;
                                                                     <strong>Jakub Dvořák</strong>
                                                                             &middot; <span class="s-53922f">Redaktor a analytik online casin</span>
                                                                                                     <div class="g-4a3ec8">
-                                    <span>Posledná aktualizácia: 8 dubna 2026</span>
+                                    <span>Posledná aktualizácia: 20 dubna 2026</span>
                                                                             &middot; <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                                                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
                                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
@@ -2059,23 +2300,23 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
 
                                         <td class="n-170281">
                                             <div class="w-3befb0">
-                                                                                                    <img src="../img/0cadfa70a7cfb7ad86518d489be7d484.webp" alt="QuickWin">
+                                                                                                    <img src="../img/5314317f475cb6b3bdfffb87aa859d87.webp" alt="Casea">
                                                 
                                                                                                     <div class="b-d5cd59">
-                                                        QuickWin                                                    </div>
+                                                        Casea                                                    </div>
                                                                                             </div>
                                         </td>
 
                                         <td class="d-a80bd4">
-                                                                                            <strong>100% AŽ DO 12 500 KČ + 200 FS</strong>
+                                                                                            <strong>250% až do 75 000 Kč + 350 FS</strong>
                                                                                     </td>
 
                                         <td class="w-38b127">
                                                                                             <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Ověřená licence Curacao</li>
-<li class="whitespace-normal break-words pl-2">VIP výběry až €20 000</li>
-<li class="whitespace-normal break-words pl-2">Oblíbená platforma s vysokým hodnocením</li>
-<li class="whitespace-normal break-words pl-2">Minimální vklad pouze €10</li>
+<li class="whitespace-normal break-words pl-2">Začněte hrát již od 5 €</li>
+<li class="whitespace-normal break-words pl-2">Prémiové hry od světových vývojářů</li>
+<li class="whitespace-normal break-words pl-2">Rychlé a bezpečné platební metody</li>
+<li class="whitespace-normal break-words pl-2">Důvěryhodné kasino s platnou licencí</li>
 </ul>
                                                                                     </td>
 
@@ -2083,7 +2324,7 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                             <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
 
                                         <td class="g-f80f8a">
-                                                                                                                                            <a href="/bonus900/quickwin/"
+                                                                                                                                            <a href="https://afftopbrand.com/PfSrkT"
                                                     class="p-89b497"
                                                     target="_blank">
                                                     Začít hned                                                </a>
@@ -2120,7 +2361,7 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                             <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
 
                                         <td class="g-f80f8a">
-                                                                                                                                            <a href="/special846/stonevegas/"
+                                                                                                                                            <a href="/game666/stonevegas/"
                                                     class="p-89b497"
                                                     target="_blank">
                                                     Začít hned                                                </a>
@@ -2134,23 +2375,23 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
 
                                         <td class="n-170281">
                                             <div class="w-3befb0">
-                                                                                                    <img src="../img/2763c32b94193f81c98ccbbd74c584dd.webp" alt="Felicebet Casino">
+                                                                                                    <img src="../img/0cadfa70a7cfb7ad86518d489be7d484.webp" alt="QuickWin">
                                                 
                                                                                                     <div class="b-d5cd59">
-                                                        Felicebet Casino                                                    </div>
+                                                        QuickWin                                                    </div>
                                                                                             </div>
                                         </td>
 
                                         <td class="d-a80bd4">
-                                                                                            <strong>Až Do Výše 65.000 Kč + 300 FS</strong>
+                                                                                            <strong>100% AŽ DO 12 500 KČ + 200 FS</strong>
                                                                                     </td>
 
                                         <td class="w-38b127">
-                                                                                            <ul>
-<li class="whitespace-normal break-words pl-2">Denní odměny a speciální nabídky</li>
-<li class="whitespace-normal break-words pl-2">Prémiová herní nabídka pro každého</li>
-<li class="whitespace-normal break-words pl-2">Rychlé a bezpečné platební metody</li>
-<li class="whitespace-normal break-words pl-2">Důvěryhodné kasino s platnou licencí</li>
+                                                                                            <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="whitespace-normal break-words pl-2">Ověřená licence Curacao</li>
+<li class="whitespace-normal break-words pl-2">VIP výběry až €20 000</li>
+<li class="whitespace-normal break-words pl-2">Oblíbená platforma s vysokým hodnocením</li>
+<li class="whitespace-normal break-words pl-2">Minimální vklad pouze €10</li>
 </ul>
                                                                                     </td>
 
@@ -2158,7 +2399,7 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                             <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
 
                                         <td class="g-f80f8a">
-                                                                                                                                            <a href="/exclusive825/felicebet/"
+                                                                                                                                            <a href="/best851/quickwin/"
                                                     class="p-89b497"
                                                     target="_blank">
                                                     Začít hned                                                </a>
@@ -2169,82 +2410,6 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                                                     
                                     <tr class="x-090218" >
                                         <td class="f-d9c6a1">4</td>
-
-                                        <td class="n-170281">
-                                            <div class="w-3befb0">
-                                                                                                    <img src="../img/d3ce5a738a51473ac4cad9d862c444a6.webp" alt="Lizaro">
-                                                
-                                                                                                    <div class="b-d5cd59">
-                                                        Lizaro                                                    </div>
-                                                                                            </div>
-                                        </td>
-
-                                        <td class="d-a80bd4">
-                                                                                            <strong>250% AŽ DO 75 000 KČ + 350 FS</strong>
-                                                                                    </td>
-
-                                        <td class="w-38b127">
-                                                                                            <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Rychlé výplaty bez komplikací</li>
-<li class="whitespace-normal break-words pl-2">Bohatý výběr herních titulů</li>
-<li class="whitespace-normal break-words pl-2">Prémiová ochrana hráčů</li>
-<li class="whitespace-normal break-words pl-2">Vklad od €10</li>
-</ul>
-                                                                                    </td>
-
-                                        <td class="v-b59a7c">
-                                            <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
-
-                                        <td class="g-f80f8a">
-                                                                                                                                            <a href="/ultra763/lizaro/"
-                                                    class="p-89b497"
-                                                    target="_blank">
-                                                    Začít hned                                                </a>
-                                                                                    </td>
-
-                                    </tr>
-
-                                                                    
-                                    <tr class="x-090218" >
-                                        <td class="f-d9c6a1">5</td>
-
-                                        <td class="n-170281">
-                                            <div class="w-3befb0">
-                                                                                                    <img src="../img/5314317f475cb6b3bdfffb87aa859d87.webp" alt="Casea">
-                                                
-                                                                                                    <div class="b-d5cd59">
-                                                        Casea                                                    </div>
-                                                                                            </div>
-                                        </td>
-
-                                        <td class="d-a80bd4">
-                                                                                            <strong>250% až do 75 000 Kč + 350 FS</strong>
-                                                                                    </td>
-
-                                        <td class="w-38b127">
-                                                                                            <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Začněte hrát již od 5 €</li>
-<li class="whitespace-normal break-words pl-2">Prémiové hry od světových vývojářů</li>
-<li class="whitespace-normal break-words pl-2">Rychlé a bezpečné platební metody</li>
-<li class="whitespace-normal break-words pl-2">Důvěryhodné kasino s platnou licencí</li>
-</ul>
-                                                                                    </td>
-
-                                        <td class="v-b59a7c">
-                                            <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
-
-                                        <td class="g-f80f8a">
-                                                                                                                                            <a href="https://afftopbrand.com/PfSrkT"
-                                                    class="p-89b497"
-                                                    target="_blank">
-                                                    Začít hned                                                </a>
-                                                                                    </td>
-
-                                    </tr>
-
-                                                                    
-                                    <tr class="x-090218" >
-                                        <td class="f-d9c6a1">6</td>
 
                                         <td class="n-170281">
                                             <div class="w-3befb0">
@@ -2272,7 +2437,83 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                             <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
 
                                         <td class="g-f80f8a">
-                                                                                                                                            <a href="/special763/bigclash/"
+                                                                                                                                            <a href="/fast158/bigclash/"
+                                                    class="p-89b497"
+                                                    target="_blank">
+                                                    Začít hned                                                </a>
+                                                                                    </td>
+
+                                    </tr>
+
+                                                                    
+                                    <tr class="x-090218" >
+                                        <td class="f-d9c6a1">5</td>
+
+                                        <td class="n-170281">
+                                            <div class="w-3befb0">
+                                                                                                    <img src="../img/d3ce5a738a51473ac4cad9d862c444a6.webp" alt="Lizaro">
+                                                
+                                                                                                    <div class="b-d5cd59">
+                                                        Lizaro                                                    </div>
+                                                                                            </div>
+                                        </td>
+
+                                        <td class="d-a80bd4">
+                                                                                            <strong>250% AŽ DO 75 000 KČ + 350 FS</strong>
+                                                                                    </td>
+
+                                        <td class="w-38b127">
+                                                                                            <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="whitespace-normal break-words pl-2">Rychlé výplaty bez komplikací</li>
+<li class="whitespace-normal break-words pl-2">Bohatý výběr herních titulů</li>
+<li class="whitespace-normal break-words pl-2">Prémiová ochrana hráčů</li>
+<li class="whitespace-normal break-words pl-2">Vklad od €10</li>
+</ul>
+                                                                                    </td>
+
+                                        <td class="v-b59a7c">
+                                            <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
+
+                                        <td class="g-f80f8a">
+                                                                                                                                            <a href="/bonus317/lizaro/"
+                                                    class="p-89b497"
+                                                    target="_blank">
+                                                    Začít hned                                                </a>
+                                                                                    </td>
+
+                                    </tr>
+
+                                                                    
+                                    <tr class="x-090218" >
+                                        <td class="f-d9c6a1">6</td>
+
+                                        <td class="n-170281">
+                                            <div class="w-3befb0">
+                                                                                                    <img src="../img/66e7450b5b3c04ca17f735b6577c98a7.webp" alt="GoldSpin">
+                                                
+                                                                                                    <div class="b-d5cd59">
+                                                        GoldSpin                                                    </div>
+                                                                                            </div>
+                                        </td>
+
+                                        <td class="d-a80bd4">
+                                                                                            <strong>Bonus 100 % až na $2 250 + 100 free spinů</strong>
+                                                                                    </td>
+
+                                        <td class="w-38b127">
+                                                                                            <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
+<li class="whitespace-normal break-words pl-2">Měsíční výběr až €12 000</li>
+<li class="whitespace-normal break-words pl-2">Denní cashback pro hráče</li>
+<li class="whitespace-normal break-words pl-2">Propracovaný VIP systém</li>
+<li class="whitespace-normal break-words pl-2">Vklad od €10</li>
+</ul>
+                                                                                    </td>
+
+                                        <td class="v-b59a7c">
+                                            <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
+
+                                        <td class="g-f80f8a">
+                                                                                                                                            <a href="/great209/goldspin/"
                                                     class="p-89b497"
                                                     target="_blank">
                                                     Začít hned                                                </a>
@@ -2309,7 +2550,7 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                             <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
 
                                         <td class="g-f80f8a">
-                                                                                                                                            <a href="/premium336/dudespin/"
+                                                                                                                                            <a href="/mega805/dudespin/"
                                                     class="p-89b497"
                                                     target="_blank">
                                                     Začít hned                                                </a>
@@ -2323,23 +2564,23 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
 
                                         <td class="n-170281">
                                             <div class="w-3befb0">
-                                                                                                    <img src="../img/66e7450b5b3c04ca17f735b6577c98a7.webp" alt="GoldSpin">
+                                                                                                    <img src="../img/e1efc922b6d69dd9649417fbc57cd45a.webp" alt="AlterSpin">
                                                 
                                                                                                     <div class="b-d5cd59">
-                                                        GoldSpin                                                    </div>
+                                                        AlterSpin                                                    </div>
                                                                                             </div>
                                         </td>
 
                                         <td class="d-a80bd4">
-                                                                                            <strong>Bonus 100 % až na $2 250 + 100 free spinů</strong>
+                                                                                            <strong>250% do 75 000 Kč + 350 FS + 1 Bonus Crab</strong>
                                                                                     </td>
 
                                         <td class="w-38b127">
-                                                                                            <ul class="[li_&amp;]:mb-0 [li_&amp;]:mt-1 [li_&amp;]:gap-1 [&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc flex flex-col gap-1 pl-8 mb-3">
-<li class="whitespace-normal break-words pl-2">Měsíční výběr až €12 000</li>
-<li class="whitespace-normal break-words pl-2">Denní cashback pro hráče</li>
-<li class="whitespace-normal break-words pl-2">Propracovaný VIP systém</li>
-<li class="whitespace-normal break-words pl-2">Vklad od €10</li>
+                                                                                            <ul>
+<li>Uvítací bonus 250 % až 75 000 Kč</li>
+<li>350 free spinů po registraci</li>
+<li>Výběry až 50 000 Kč denně</li>
+<li>Vklad od 200 Kč</li>
 </ul>
                                                                                     </td>
 
@@ -2347,7 +2588,7 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                             <span class="z-0fe103">5/5</span><span class="t-677103"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFD700"><path d="M12 .587l3.668 7.431L24 9.753l-6 5.847L19.335 24 12 20.201 4.665 24 6 15.6 0 9.753l8.332-1.735z"/></svg></span>                                        </td>
 
                                         <td class="g-f80f8a">
-                                                                                                                                            <a href="/game960/goldspin/"
+                                                                                                                                            <a href="/super612/alterspin/"
                                                     class="p-89b497"
                                                     target="_blank">
                                                     Začít hned                                                </a>
@@ -2364,8 +2605,8 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
     "@type": "WebPage",
     "name": "Nejlepší Zahraniční Casina Pro České Hráče Online: TOP 11 Casino 2026",
     "description": "Zájem českých hráčů o zahraniční online casina dlouhodobě roste. Podle dat analytické platformy SimilarWeb zaznamenaly přední mezinárodní herní platformy v prvním čtvrtletí 2026 nárůst návštěvnosti",
-    "datePublished": "2026-04-08",
-    "dateModified": "2026-04-08",
+    "datePublished": "2026-04-20",
+    "dateModified": "2026-04-20",
     "author": {
         "@type": "Person",
         "name": "Jakub Dvořák"
@@ -2380,8 +2621,8 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 "position": 1,
                 "item": {
                     "@type": "Organization",
-                    "name": "QuickWin",
-                    "description": "100% do 12 500 Kč + 200 FS!"
+                    "name": "Casea",
+                    "description": "250% až do 75 000 Kč + 350 FS"
                 }
             },
             {
@@ -2390,7 +2631,7 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 "item": {
                     "@type": "Organization",
                     "name": "Stonevegas",
-                    "description": "100% až do 12 500 Kč + 200 FS"
+                    "description": "100% až 12 500 Kč + 200 FS!"
                 }
             },
             {
@@ -2398,8 +2639,8 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 "position": 3,
                 "item": {
                     "@type": "Organization",
-                    "name": "Felicebet Casino",
-                    "description": "Až Do Výše 65.000 Kč + 300 FS"
+                    "name": "QuickWin",
+                    "description": "100% do 12 500 Kč + 200 FS!"
                 }
             },
             {
@@ -2407,8 +2648,8 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 "position": 4,
                 "item": {
                     "@type": "Organization",
-                    "name": "Lizaro",
-                    "description": "250% až 75 000 Kč + 350 FS!"
+                    "name": "BigClash",
+                    "description": "100% až do 12 500 Kč + 200 FS + Bonus Crab"
                 }
             },
             {
@@ -2416,8 +2657,8 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 "position": 5,
                 "item": {
                     "@type": "Organization",
-                    "name": "Casea",
-                    "description": "250% až 75 000 Kč + 350 FS"
+                    "name": "Lizaro",
+                    "description": "250% AŽ DO 75 000 KČ + 350 FS"
                 }
             },
             {
@@ -2425,8 +2666,8 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 "position": 6,
                 "item": {
                     "@type": "Organization",
-                    "name": "BigClash",
-                    "description": "100% až do 12 500 Kč + 200 FS + Bonus Crab"
+                    "name": "GoldSpin",
+                    "description": "Bonus 100 % až na $2 250 + 100 free spinů"
                 }
             },
             {
@@ -2443,8 +2684,8 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 "position": 8,
                 "item": {
                     "@type": "Organization",
-                    "name": "GoldSpin",
-                    "description": "Bonus 100 % až na $2 250 + 100 free spinů"
+                    "name": "AlterSpin",
+                    "description": "250% až do 75 000 Kč + 350 FS + 1 Bonus Crab"
                 }
             }
         ]
@@ -2767,7 +3008,7 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                                 </div>
                                 <div class="n-70fb17">
                                     <div class="c-d3a93f" id="m-8dd802">
-                                        <span class="t-a6f10c">Obsah</span>
+                                        <span class="t-a6f10c">Table of Contents</span>
                                         <span class="s-427063">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
@@ -2900,38 +3141,47 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                         <ul class="v-ab0f5c">
                                                                                                 <li>
                                         
+                                                                                            <img src="../img/e2bd641d40cd4a0ff49fd5cf970a90cd.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/f9bd2d997f77a79a28d475d88803c00d.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/83c0ff033aa18fcd4e6ed56d67ed4252.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/88907354519cfd0ab17974d20f377f5d.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/ed776339207a64b962a1b7af6c024993.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/4495c29d671b2fa45073d42e1e74e57e.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/1f2a06e05f4dd2bb2613beec4dc04071.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/d65f2a2b3d7889220ff25f1b94ed1334.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/48101ac12203b32fc8b7629b9fadea84.svg" alt="Payment Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                                     </ul>
@@ -2940,30 +3190,37 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                         <ul class="r-70de36">
                                                                                                 <li>
                                         
+                                                                                            <img src="../img/f93b6d261d8fa8192704e7996487a591.webp" alt="Partner Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/65c5d55d0235389d26322bf23ae49122.webp" alt="Partner Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/96a404530726331fc5e4a95f03c92f9c.webp" alt="Partner Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/f15123378c4343ca9afaf7b04ab41262.webp" alt="Partner Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/17d43ceaf47b06cef8e84d7b72e2d1d8.webp" alt="Partner Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/6c74d06ead696944123213cea0160fc8.webp" alt="Partner Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                     <li>
                                         
+                                                                                            <img src="../img/3fd8957b55e052df80ce2e156e16355f.webp" alt="Partner Option" style="max-height: 40px;">
                                             
                                                                                 </li>
                                                                                     </ul>
@@ -2979,12 +3236,12 @@ Dlouhodobě sleduje vývoj v iGaming odvětví a pravidelně testuje nové casin
                 <div class="w-771994">
                     <span class="f-57f908">&times;</span>
                     <div class="a-118dda">
-                                                    <img src="../img/0cadfa70a7cfb7ad86518d489be7d484.webp" alt="Casino">
+                                                    <img src="../img/5314317f475cb6b3bdfffb87aa859d87.webp" alt="Casino">
                                                 <div class="b-272dd7">
-                            <p class="q-afb368">100% AŽ 12 500 KČ + 200 FS</p>
+                            <p class="q-afb368">250% do 75 000 Kč + 350 FS</p>
                         </div>
                     </div>
-                    <a href="/great209/quickwin/" style="background: #0f3d33 !important;">
+                    <a href="/best935/casea/" style="background: #0f3d33 !important;">
                         Začít hned                    </a>
                 </div>
             </div>
